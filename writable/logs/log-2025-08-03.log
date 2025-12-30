@@ -1,0 +1,179 @@
+ERROR - 2025-08-03 06:14:22 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in E:\xampp\htdocs\food_store\system\Database\MySQLi\Connection.php:202
+Stack trace:
+#0 E:\xampp\htdocs\food_store\system\Database\MySQLi\Connection.php(202): mysqli->real_connect('localhost', 'madhav', '1212', 'food_store', 3306, '', 0)
+#1 E:\xampp\htdocs\food_store\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xampp\htdocs\food_store\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xampp\htdocs\food_store\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xampp\htdocs\food_store\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(186): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\food_store\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 E:\xampp\htdocs\food_store\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', NULL)
+#7 E:\xampp\htdocs\food_store\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(25): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 E:\xampp\htdocs\food_store\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(682): setting('Auth.sessionCon...')
+#9 E:\xampp\htdocs\food_store\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(700): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 E:\xampp\htdocs\food_store\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(387): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserKey('id')
+#11 E:\xampp\htdocs\food_store\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(371): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 E:\xampp\htdocs\food_store\vendor\codeigniter4\shield\src\Auth.php(101): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 E:\xampp\htdocs\food_store\app\Controllers\Products\Products.php(47): CodeIgniter\Shield\Auth->user()
+#14 E:\xampp\htdocs\food_store\system\CodeIgniter.php(933): App\Controllers\Products\Products->cart()
+#15 E:\xampp\htdocs\food_store\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products\Products))
+#16 E:\xampp\htdocs\food_store\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 E:\xampp\htdocs\food_store\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#18 E:\xampp\htdocs\food_store\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#19 E:\xampp\htdocs\food_store\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#20 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in E:\xampp\htdocs\food_store\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 E:\xampp\htdocs\food_store\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xampp\htdocs\food_store\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xampp\htdocs\food_store\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\xampp\htdocs\food_store\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(186): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\xampp\htdocs\food_store\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#5 E:\xampp\htdocs\food_store\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', NULL)
+#6 E:\xampp\htdocs\food_store\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(25): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#7 E:\xampp\htdocs\food_store\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(682): setting('Auth.sessionCon...')
+#8 E:\xampp\htdocs\food_store\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(700): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#9 E:\xampp\htdocs\food_store\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(387): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserKey('id')
+#10 E:\xampp\htdocs\food_store\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(371): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#11 E:\xampp\htdocs\food_store\vendor\codeigniter4\shield\src\Auth.php(101): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#12 E:\xampp\htdocs\food_store\app\Controllers\Products\Products.php(47): CodeIgniter\Shield\Auth->user()
+#13 E:\xampp\htdocs\food_store\system\CodeIgniter.php(933): App\Controllers\Products\Products->cart()
+#14 E:\xampp\htdocs\food_store\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products\Products))
+#15 E:\xampp\htdocs\food_store\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 E:\xampp\htdocs\food_store\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#17 E:\xampp\htdocs\food_store\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#18 E:\xampp\htdocs\food_store\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#19 {main}
+CRITICAL - 2025-08-03 06:14:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: products/cart]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 3 FCPATH\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(186): CodeIgniter\Database\BaseBuilder->get()
+ 4 FCPATH\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 5 FCPATH\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', null)
+ 6 FCPATH\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(25): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 7 FCPATH\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(682): setting('Auth.sessionConfig')
+ 8 FCPATH\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(700): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+ 9 FCPATH\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(387): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserKey('id')
+10 FCPATH\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(371): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+11 FCPATH\vendor\codeigniter4\shield\src\Auth.php(101): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+12 APPPATH\Controllers\Products\Products.php(47): CodeIgniter\Shield\Auth->user()
+13 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products\Products->cart()
+14 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products\Products))
+15 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-08-03 06:29:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 06:29:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 06:29:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 06:29:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 06:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 06:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 06:29:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 06:29:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 06:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:28:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:28:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:31:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:32:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:32:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:37:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:37:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:37:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:37:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:37:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:37:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:37:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:46:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:46:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:47:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:47:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:47:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:47:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:47:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 08:47:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:50:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:50:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:50:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:50:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:50:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:50:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:50:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:51:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:51:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:51:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:51:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:51:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:51:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:51:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:51:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:51:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:52:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:52:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:52:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:52:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:52:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:52:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 14:52:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 18:08:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-03 18:08:18 --> ErrorException: Attempt to read property "id" on null
+[Method: GET, Route: products/cart]
+in APPPATH\Controllers\Products\Products.php on line 47.
+ 1 APPPATH\Controllers\Products\Products.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'E:\\xampp\\htdocs\\food_store\\app\\Controllers\\Products\\Products.php', 47)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products\Products->cart()
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products\Products))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-08-03 18:08:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-03 18:08:24 --> ErrorException: Attempt to read property "id" on null
+[Method: GET, Route: products/single-product/7]
+in APPPATH\Controllers\Products\Products.php on line 19.
+ 1 APPPATH\Controllers\Products\Products.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id" on null', 'E:\\xampp\\htdocs\\food_store\\app\\Controllers\\Products\\Products.php', 19)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Products\Products->productDetails('7')
+ 3 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Products\Products))
+ 4 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(59): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+DEBUG - 2025-08-03 18:08:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 18:08:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 18:08:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 18:08:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 18:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 18:08:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 18:08:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 18:08:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 18:08:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 18:15:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 18:15:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+DEBUG - 2025-08-03 18:15:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
